@@ -11,6 +11,7 @@ struct CustomTextField: View {
     
     let title: String
     @State var text: String = ""
+    @State private var showPassword: Bool = false
     let imageName: String?
     let password: Bool
     
@@ -22,21 +23,29 @@ struct CustomTextField: View {
     
     var body: some View {
         HStack {
-            if password {
+            if password && showPassword == false {
                 SecureField(title, text: $text)
                     .font(.urbanist500)
                     .foregroundColor(.gray)
                     .textFieldStyle(.plain)
+                    .textInputAutocapitalization(.never)
+                    .disableAutocorrection(true)
                     
             } else {
                 TextField(title, text: $text)
                     .font(.urbanist500)
                     .foregroundColor(.gray)
                     .textFieldStyle(.plain)
+                    .textInputAutocapitalization(.never)
+                    .disableAutocorrection(true)
             }
             Spacer()
             if let imageName = imageName {
-                Image(imageName)
+                Button(action: {
+                    showPassword.toggle()
+                }) {
+                    Image(imageName)
+                }
             }
         }
         .padding(.horizontal, 18)
