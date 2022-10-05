@@ -34,7 +34,7 @@ struct RegisterView: View {
                 }
                 .padding(.bottom, 30)
                 
-                CustomButton(button1: "Register")
+                CustomActionButton(title: "Register", action: {})
                    .padding(.bottom, 35)
                
                 SocialsAuthView(title: "Or Register with")

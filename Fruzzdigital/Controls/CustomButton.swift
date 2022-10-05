@@ -8,28 +8,20 @@
 import SwiftUI
 
 struct CustomButton: View {
-    let button1 : String
-    
+    let title : String
     var body: some View {
-        
-        Button(action: {}) {
-            Text(button1)
-                .frame(height: 56)
-                .frame(maxWidth: .infinity)
-                .background(Color.black)
-                .font(.urbanist600)
-                .foregroundColor(.white)
-                .cornerRadius(8)
-            
-        }
+        Text(title)
+            .frame(height: 56)
+            .frame(maxWidth: .infinity)
+            .background(Color.dark)
+            .font(.urbanist600)
+            .foregroundColor(.white)
+            .cornerRadius(8)
     }
 }
 
 struct CustomButton_Previews: PreviewProvider {
     static var previews: some View {
-//        CustomButton()
-        VStack{
-            CustomButton(button1: "Login")
-        }
+        CustomButton(title: "Button")
     }
 }

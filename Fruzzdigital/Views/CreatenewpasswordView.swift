@@ -39,7 +39,7 @@ struct CreatenewpasswordView: View {
                 }
                 .padding(.bottom, 38)
                 
-                       CustomButton(button1: "Reset Password")
+                       CustomActionButton(title: "Reset Password", action: {})
                       
             }
                Spacer()

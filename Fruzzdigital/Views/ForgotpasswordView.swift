@@ -15,14 +15,7 @@ struct ForgotpasswordView: View {
             VStack{
                 VStack(alignment:.leading , spacing: 0){
                     
-                    Button(action: {
-                        dismiss()
-                    }) {
-                        Image("im<")
-                            .foregroundColor(Color .dark)
-                            .frame(width: 41, height: 41)
-                            .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color .white1, lineWidth: 1))
-                    }
+                    BackButton(action: dismiss)
                     .padding(.bottom, 28)
                     
                     Text("Forgot Password?")
@@ -39,7 +32,7 @@ struct ForgotpasswordView: View {
                     CustomTextField(title: "Enter your email")
                         .padding(.bottom, 38)
                     
-                    CustomButton(button1: "Send Code")
+                    CustomActionButton(title: "Send Code", action: {})
                     
                     Spacer()
                 }

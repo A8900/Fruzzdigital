@@ -17,14 +17,7 @@ struct LoginView: View {
     var body: some View {
         VStack {
             VStack (alignment: .leading, spacing: 0) {
-                Button(action: {
-                    dismiss()
-                }) {
-                    Image("im<")
-                        .foregroundColor(Color .dark)
-                        .frame(width: 41, height: 41)
-                        .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color .white1, lineWidth: 1))
-                }
+                BackButton(action: dismiss)
                 .padding(.bottom, 28)
                 
                 Text("Welcome back! Glad to see you. Again!")
@@ -50,7 +43,9 @@ struct LoginView: View {
                     }
                 }
                 
-                CustomButton(button1: "Login")
+                CustomActionButton(title: "Login", action: {
+                    print("azf")
+                })
                     .padding(.bottom, 35)
                 
                 

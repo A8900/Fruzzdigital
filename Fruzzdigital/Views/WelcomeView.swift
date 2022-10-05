@@ -22,14 +22,7 @@ struct WelcomeView: View {
                     
                     VStack(spacing: 15) {
                         NavigationLink(destination: LoginView()) {
-                            Text("Login")
-                                .frame(height: 56)
-                                .frame(maxWidth: .infinity)
-                                .background(Color.dark)
-                                .font(.urbanist600)
-                                .foregroundColor(.white)
-                                .cornerRadius(8)
-                                .padding(.horizontal, 22)
+                            CustomButton(title: "Login")
                         }
                         
                         Button(action: {}) {
@@ -41,7 +34,6 @@ struct WelcomeView: View {
                                 .foregroundColor(.black)
                                 .cornerRadius(8)
                                 .overlay(RoundedRectangle(cornerRadius: 8).stroke(.black, lineWidth: 1))
-                                .padding(.horizontal, 22)
                         }
                     }
 
@@ -52,6 +44,7 @@ struct WelcomeView: View {
                     }
                     .padding(.top, 46)
                 }
+                .padding(.horizontal, 22)
             }
         }
     }
