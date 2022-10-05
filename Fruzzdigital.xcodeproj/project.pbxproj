@@ -7,13 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED390F7B28ED8CBB00CE649F /* ForgotpasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED390F7A28ED8CBB00CE649F /* ForgotpasswordView.swift */; };
+		ED390F7D28ED9A3400CE649F /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED390F7C28ED9A3400CE649F /* RegisterView.swift */; };
+		ED390F7F28EDBEAB00CE649F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED390F7E28EDBEAB00CE649F /* LoginView.swift */; };
+		ED390F8228EDD15B00CE649F /* OTPButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED390F8128EDD15B00CE649F /* OTPButtonView.swift */; };
+		ED390F8428EDD2D900CE649F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED390F8328EDD2D900CE649F /* CustomTextField.swift */; };
+		ED390F8628EDD7E700CE649F /* SocialsAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED390F8528EDD7E700CE649F /* SocialsAuthView.swift */; };
+		ED390F8828EDD84D00CE649F /* SocialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED390F8728EDD84D00CE649F /* SocialButton.swift */; };
+		ED390F8A28EDE56800CE649F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED390F8928EDE56800CE649F /* CustomButton.swift */; };
 		ED9D92A628EC4C9000A9C61A /* FruzzdigitalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D92A528EC4C9000A9C61A /* FruzzdigitalApp.swift */; };
-		ED9D92A828EC4C9000A9C61A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D92A728EC4C9000A9C61A /* ContentView.swift */; };
+		ED9D92A828EC4C9000A9C61A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D92A728EC4C9000A9C61A /* WelcomeView.swift */; };
 		ED9D92AA28EC4C9200A9C61A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED9D92A928EC4C9200A9C61A /* Assets.xcassets */; };
 		ED9D92AD28EC4C9200A9C61A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED9D92AC28EC4C9200A9C61A /* Preview Assets.xcassets */; };
 		ED9D92B728EC4C9200A9C61A /* FruzzdigitalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D92B628EC4C9200A9C61A /* FruzzdigitalTests.swift */; };
 		ED9D92C128EC4C9200A9C61A /* FruzzdigitalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D92C028EC4C9200A9C61A /* FruzzdigitalUITests.swift */; };
 		ED9D92C328EC4C9200A9C61A /* FruzzdigitalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D92C228EC4C9200A9C61A /* FruzzdigitalUITestsLaunchTests.swift */; };
+		ED9D92D028EC51FE00A9C61A /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D92CF28EC51FE00A9C61A /* Styles.swift */; };
+		ED9D92D328EC548700A9C61A /* Urbanist-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED9D92D228EC548700A9C61A /* Urbanist-Bold.ttf */; };
+		ED9D92D528EC549900A9C61A /* Urbanist-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED9D92D428EC549900A9C61A /* Urbanist-Medium.ttf */; };
+		ED9D92D728EC54A500A9C61A /* Urbanist-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED9D92D628EC54A500A9C61A /* Urbanist-Regular.ttf */; };
+		ED9D92DB28EC56CB00A9C61A /* PasswordChangedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D92DA28EC56CB00A9C61A /* PasswordChangedView.swift */; };
+		ED9D92DD28EC634300A9C61A /* OTPVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D92DC28EC634300A9C61A /* OTPVerificationView.swift */; };
+		ED9D92DF28EC7CFF00A9C61A /* CreatenewpasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D92DE28EC7CFF00A9C61A /* CreatenewpasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +49,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED390F7A28ED8CBB00CE649F /* ForgotpasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotpasswordView.swift; sourceTree = "<group>"; };
+		ED390F7C28ED9A3400CE649F /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		ED390F7E28EDBEAB00CE649F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		ED390F8128EDD15B00CE649F /* OTPButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPButtonView.swift; sourceTree = "<group>"; };
+		ED390F8328EDD2D900CE649F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		ED390F8528EDD7E700CE649F /* SocialsAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialsAuthView.swift; sourceTree = "<group>"; };
+		ED390F8728EDD84D00CE649F /* SocialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialButton.swift; sourceTree = "<group>"; };
+		ED390F8928EDE56800CE649F /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		ED9D92A228EC4C9000A9C61A /* Fruzzdigital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fruzzdigital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9D92A528EC4C9000A9C61A /* FruzzdigitalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruzzdigitalApp.swift; sourceTree = "<group>"; };
-		ED9D92A728EC4C9000A9C61A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ED9D92A728EC4C9000A9C61A /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		ED9D92A928EC4C9200A9C61A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED9D92AC28EC4C9200A9C61A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ED9D92B228EC4C9200A9C61A /* FruzzdigitalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruzzdigitalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +67,14 @@
 		ED9D92BC28EC4C9200A9C61A /* FruzzdigitalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruzzdigitalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9D92C028EC4C9200A9C61A /* FruzzdigitalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruzzdigitalUITests.swift; sourceTree = "<group>"; };
 		ED9D92C228EC4C9200A9C61A /* FruzzdigitalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruzzdigitalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ED9D92CF28EC51FE00A9C61A /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		ED9D92D228EC548700A9C61A /* Urbanist-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-Bold.ttf"; sourceTree = "<group>"; };
+		ED9D92D428EC549900A9C61A /* Urbanist-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-Medium.ttf"; sourceTree = "<group>"; };
+		ED9D92D628EC54A500A9C61A /* Urbanist-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-Regular.ttf"; sourceTree = "<group>"; };
+		ED9D92D828EC54F600A9C61A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		ED9D92DA28EC56CB00A9C61A /* PasswordChangedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordChangedView.swift; sourceTree = "<group>"; };
+		ED9D92DC28EC634300A9C61A /* OTPVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OTPVerificationView.swift; path = ../../../../Documents/OTPVerificationView.swift; sourceTree = "<group>"; };
+		ED9D92DE28EC7CFF00A9C61A /* CreatenewpasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatenewpasswordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +102,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED390F8028EDD14900CE649F /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				ED390F8128EDD15B00CE649F /* OTPButtonView.swift */,
+				ED390F8328EDD2D900CE649F /* CustomTextField.swift */,
+				ED390F8528EDD7E700CE649F /* SocialsAuthView.swift */,
+				ED390F8728EDD84D00CE649F /* SocialButton.swift */,
+				ED390F8928EDE56800CE649F /* CustomButton.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
 		ED9D929928EC4C9000A9C61A = {
 			isa = PBXGroup;
 			children = (
@@ -94,10 +137,14 @@
 		ED9D92A428EC4C9000A9C61A /* Fruzzdigital */ = {
 			isa = PBXGroup;
 			children = (
+				ED390F8028EDD14900CE649F /* Controls */,
+				ED9D92D828EC54F600A9C61A /* Info.plist */,
+				ED9D92D128EC536E00A9C61A /* Fonts */,
 				ED9D92A528EC4C9000A9C61A /* FruzzdigitalApp.swift */,
-				ED9D92A728EC4C9000A9C61A /* ContentView.swift */,
+				ED9D92D928EC56A400A9C61A /* Views */,
 				ED9D92A928EC4C9200A9C61A /* Assets.xcassets */,
 				ED9D92AB28EC4C9200A9C61A /* Preview Content */,
+				ED9D92CF28EC51FE00A9C61A /* Styles.swift */,
 			);
 			path = Fruzzdigital;
 			sourceTree = "<group>";
@@ -125,6 +172,30 @@
 				ED9D92C228EC4C9200A9C61A /* FruzzdigitalUITestsLaunchTests.swift */,
 			);
 			path = FruzzdigitalUITests;
+			sourceTree = "<group>";
+		};
+		ED9D92D128EC536E00A9C61A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				ED9D92D428EC549900A9C61A /* Urbanist-Medium.ttf */,
+				ED9D92D228EC548700A9C61A /* Urbanist-Bold.ttf */,
+				ED9D92D628EC54A500A9C61A /* Urbanist-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		ED9D92D928EC56A400A9C61A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED9D92A728EC4C9000A9C61A /* WelcomeView.swift */,
+				ED9D92DA28EC56CB00A9C61A /* PasswordChangedView.swift */,
+				ED9D92DC28EC634300A9C61A /* OTPVerificationView.swift */,
+				ED9D92DE28EC7CFF00A9C61A /* CreatenewpasswordView.swift */,
+				ED390F7A28ED8CBB00CE649F /* ForgotpasswordView.swift */,
+				ED390F7C28ED9A3400CE649F /* RegisterView.swift */,
+				ED390F7E28EDBEAB00CE649F /* LoginView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +302,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED9D92D328EC548700A9C61A /* Urbanist-Bold.ttf in Resources */,
+				ED9D92D528EC549900A9C61A /* Urbanist-Medium.ttf in Resources */,
 				ED9D92AD28EC4C9200A9C61A /* Preview Assets.xcassets in Resources */,
 				ED9D92AA28EC4C9200A9C61A /* Assets.xcassets in Resources */,
+				ED9D92D728EC54A500A9C61A /* Urbanist-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +331,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED9D92A828EC4C9000A9C61A /* ContentView.swift in Sources */,
+				ED9D92DB28EC56CB00A9C61A /* PasswordChangedView.swift in Sources */,
+				ED390F8428EDD2D900CE649F /* CustomTextField.swift in Sources */,
+				ED390F8828EDD84D00CE649F /* SocialButton.swift in Sources */,
+				ED390F7B28ED8CBB00CE649F /* ForgotpasswordView.swift in Sources */,
+				ED390F8A28EDE56800CE649F /* CustomButton.swift in Sources */,
+				ED9D92DD28EC634300A9C61A /* OTPVerificationView.swift in Sources */,
+				ED390F7F28EDBEAB00CE649F /* LoginView.swift in Sources */,
+				ED390F8228EDD15B00CE649F /* OTPButtonView.swift in Sources */,
+				ED9D92DF28EC7CFF00A9C61A /* CreatenewpasswordView.swift in Sources */,
+				ED390F8628EDD7E700CE649F /* SocialsAuthView.swift in Sources */,
+				ED9D92D028EC51FE00A9C61A /* Styles.swift in Sources */,
+				ED390F7D28ED9A3400CE649F /* RegisterView.swift in Sources */,
+				ED9D92A828EC4C9000A9C61A /* WelcomeView.swift in Sources */,
 				ED9D92A628EC4C9000A9C61A /* FruzzdigitalApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,6 +507,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Fruzzdigital/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fruzzdigital/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +536,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Fruzzdigital/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fruzzdigital/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
