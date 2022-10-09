@@ -8,19 +8,16 @@
 import SwiftUI
 
 struct CreatenewpasswordView: View {
+    @Environment(\.dismiss) private var dismiss
     @State private var newPassword = ""
     @State private var confirmPassword = ""
     
     var body: some View {
                VStack {
                    VStack(alignment: .leading, spacing: 0){
-                   Button(action: {}) {
-                       Image("im<")
-                           .foregroundColor(Color .white1)
-                           .frame(width: 41, height: 41)
-                           .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color .white1, lineWidth: 1))
+                       BackButton(action: dismiss)
                            .padding(.bottom, 28)
-                   }
+                   
                        Text("Create new password")
                            .font(.urbanist700f)
                            .foregroundColor(.dark)

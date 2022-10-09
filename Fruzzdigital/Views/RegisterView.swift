@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct RegisterView: View {
+    @Environment(\.dismiss) private var dismiss
     @State private var username = ""
     @State private var email = ""
     @State private var password = ""
     @State private var confirmpassword = ""
-
+    
     var body: some View {
      VStack{
             VStack(alignment: .leading, spacing: 0) {
-                Image("im<")
-                    .frame(width: 41, height: 41)
-                    .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color .white1, lineWidth: 1))
+                BackButton(action: dismiss)
+                
                     .padding(.bottom, 28)
                 
                 Text("Hello! Register to get started")
