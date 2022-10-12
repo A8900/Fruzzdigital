@@ -14,12 +14,14 @@ struct CustomTextField: View {
     @State private var showPassword: Bool = false
     let imageName: String?
     let password: Bool
+    let error: Bool
     
-    init(title: String, text: Binding<String>, imageName: String? = nil, password: Bool = false) {
+    init(title: String, text: Binding<String>, imageName: String? = nil, password: Bool = false, error: Bool = false) {
         self.title = title
         self._text = text
         self.password = password
         self.imageName = imageName
+        self.error = error
     }
     
     var body: some View {
@@ -53,7 +55,7 @@ struct CustomTextField: View {
         .frame(height: 56)
         .background(Color.white2)
         .cornerRadius(8)
-        .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color .white1, lineWidth: 1))
+        .overlay(RoundedRectangle(cornerRadius: 8).stroke(error ? Color.red : Color.white1, lineWidth: 1))
 
     }
 }

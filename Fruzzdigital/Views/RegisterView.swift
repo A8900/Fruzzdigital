@@ -9,6 +9,9 @@ import SwiftUI
 
 struct RegisterView: View {
     @Environment(\.dismiss) private var dismiss
+    
+    @ObservedObject private var viewModel = AuthenticationViewModel.shared
+    
     @State private var username = ""
     @State private var email = ""
     @State private var password = ""
@@ -29,12 +32,12 @@ struct RegisterView: View {
                 VStack (spacing: 12) {
                     CustomTextField(title: "Username", text: $username)
                     CustomTextField(title: "Email", text: $email)
-                    CustomTextField(title: "Password", text: $password)
-                    CustomTextField(title: "Confirm Password", text: $confirmpassword)
+                    CustomTextField(title: "Password", text: $password, imageName: "showPassword", password: true)
+                    CustomTextField(title: "Confirm Password", text: $confirmpassword, imageName: "showPassword", password: true)
                 }
                 .padding(.bottom, 30)
                 
-                CustomActionButton(title: "Register", action: {})
+                CustomActionButton(title: "Register", action: register)
                    .padding(.bottom, 35)
                
                 SocialsAuthView(title: "Or Register with")
@@ -58,7 +61,15 @@ struct RegisterView: View {
             .padding(.top, 12)
             .padding(.bottom, 26)
             .navigationBarHidden(true)
-
+            .alert(viewModel.registerErrorText, isPresented: $viewModel.showingRegisterAlert) {
+                Button("Try Again", role: .cancel, action: {
+                    viewModel.showingRegisterAlert.toggle()
+                })
+            }
+    }
+    
+    private func register() {
+        viewModel.register(username: username, email: email, password: password)
     }
 }
 

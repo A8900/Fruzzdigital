@@ -18,7 +18,7 @@ struct FruzzdigitalApp: App {
     
     var body: some Scene {
         WindowGroup {
-            WelcomeView()
+            MainView()
         }
     }
 }
