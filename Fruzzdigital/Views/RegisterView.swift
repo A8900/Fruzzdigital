@@ -16,6 +16,9 @@ struct RegisterView: View {
     @State private var email = ""
     @State private var password = ""
     @State private var confirmpassword = ""
+    @State private var usernameError: Bool = false
+    @State private var emailError: Bool = false
+    @State private var passwordError: Bool = false
     
     var body: some View {
      VStack{
@@ -30,14 +33,14 @@ struct RegisterView: View {
                     .padding(.bottom, 32)
                 
                 VStack (spacing: 12) {
-                    CustomTextField(title: "Username", text: $username)
-                    CustomTextField(title: "Email", text: $email)
-                    CustomTextField(title: "Password", text: $password, imageName: "showPassword", password: true)
+                    CustomTextField(title: "Username", text: $username, error: usernameError)
+                    CustomTextField(title: "Email", text: $email, error: emailError)
+                    CustomTextField(title: "Password", text: $password, imageName: "showPassword", password: true , error:passwordError)
                     CustomTextField(title: "Confirm Password", text: $confirmpassword, imageName: "showPassword", password: true)
                 }
                 .padding(.bottom, 30)
                 
-                CustomActionButton(title: "Register", action: register)
+                CustomActionButton(title: "Register", action: register, isDisabled: !isValid())
                    .padding(.bottom, 35)
                
                 SocialsAuthView(title: "Or Register with")
@@ -66,11 +69,41 @@ struct RegisterView: View {
                     viewModel.showingRegisterAlert.toggle()
                 })
             }
+            .onChange(of: email) { newValue in
+                let emailFormat = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+                let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailFormat)
+                emailError = !emailPredicate.evaluate(with: email)
+            }
+            .onChange(of: username) { newValue in
+                if newValue.count < 3 {
+                    usernameError = true
+                } else {
+                    usernameError = false
+                }
+            }
+            .onChange(of: password) { newValue in
+                if newValue.count < 6 {
+                    passwordError = true
+                } else {
+                    passwordError = false
+                }
+            }
     }
     
     private func register() {
         viewModel.register(username: username, email: email, password: password)
     }
+    
+    private func isValid() -> Bool {
+        if emailError || passwordError {
+            return false
+        }
+        if email.count < 5 || password.count < 6 {
+            return false
+        }
+        return true
+    }
+
 }
 
 struct RegisterView_Previews: PreviewProvider {
