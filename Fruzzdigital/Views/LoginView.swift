@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
-    
     @Environment(\.dismiss) private var dismiss
-    
     @State private var email = ""
     @State private var password = ""
     

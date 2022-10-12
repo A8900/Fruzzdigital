@@ -136,10 +136,10 @@
 				ED9D92A728EC4C9000A9C61A /* WelcomeView.swift */,
 				ED9D92DA28EC56CB00A9C61A /* PasswordChangedView.swift */,
 				ED9D92DC28EC634300A9C61A /* OTPVerificationView.swift */,
-				ED9D92DE28EC7CFF00A9C61A /* CreatenewpasswordView.swift */,
 				ED390F7A28ED8CBB00CE649F /* ForgotpasswordView.swift */,
-				ED390F7C28ED9A3400CE649F /* RegisterView.swift */,
+				ED9D92DE28EC7CFF00A9C61A /* CreatenewpasswordView.swift */,
 				ED390F7E28EDBEAB00CE649F /* LoginView.swift */,
+				ED390F7C28ED9A3400CE649F /* RegisterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

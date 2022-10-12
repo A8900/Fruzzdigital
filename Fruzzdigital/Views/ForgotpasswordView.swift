@@ -43,14 +43,14 @@ struct ForgotpasswordView: View {
                         .font(.urbanist700)
                     
                     Button(action: {}) {
+                        
                         Text("Login")
                             .foregroundColor(Color . primary1)
                             .font(.urbanist700)
                     }
                     
                 }
-                
-                
+                 
             }
         }
         .padding(.horizontal, 22)

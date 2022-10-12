@@ -44,6 +44,7 @@ struct CreatenewpasswordView: View {
                .padding(.horizontal, 22)
                .padding(.top, 12)
                .padding(.bottom, 26)
+               .navigationBarHidden(true)
 
     }
 }

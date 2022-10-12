@@ -26,14 +26,16 @@ struct WelcomeView: View {
                         }
                         
                         Button(action: {}) {
-                            Text("Register")
-                                .frame(height: 56)
-                                .frame(maxWidth: .infinity)
-                                .background(Color.white)
-                                .font(.urbanist600)
-                                .foregroundColor(.black)
-                                .cornerRadius(8)
-                                .overlay(RoundedRectangle(cornerRadius: 8).stroke(.black, lineWidth: 1))
+                            NavigationLink(destination: RegisterView()) {
+                                Text("Register")
+                                    .frame(height: 56)
+                                    .frame(maxWidth: .infinity)
+                                    .background(Color.white)
+                                    .font(.urbanist600)
+                                    .foregroundColor(.black)
+                                    .cornerRadius(8)
+                                    .overlay(RoundedRectangle(cornerRadius: 8).stroke(.black, lineWidth: 1))
+                            }
                         }
                     }
 

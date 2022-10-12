@@ -27,16 +27,11 @@ struct PasswordChangedView: View {
                 .padding(.bottom, 40)
             
             Button(action: {}) {
-                Text("Back to Login")
-                    .font(.urbanist500)
-                    .foregroundColor(.white)
-                    .frame(height: 56)
-                    .frame(maxWidth: .infinity)
-                    .background(Color .dark)
-                    .cornerRadius(8)
-                    .padding(.horizontal, 22)
+                CustomButton(title: "Back to Login")
             }
         }
+        .padding(.horizontal, 22)
+        
     }
 }
 
