@@ -6,9 +6,16 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct FruzzdigitalApp: App {
+    
+    init() {
+        print("init")
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
             WelcomeView()

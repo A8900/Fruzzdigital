@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct LoginView: View {
     @Environment(\.dismiss) private var dismiss
@@ -25,15 +26,15 @@ struct LoginView: View {
                     .padding(.bottom, 32)
                 
                 VStack(spacing: 15) {
-                    CustomTextField(title: "Enter your email")
-                    CustomTextField(title: "Enter your password", imageName: "showPassword", password: true)
+                    CustomTextField(title: "Enter your email", text: $email)
+                    CustomTextField(title: "Enter your password", text: $password, imageName: "showPassword", password: true)
                 }
                 .padding(.bottom, 15)
                 
                 
                 HStack(spacing: 0) {
                     Spacer()
-                    NavigationLink(destination: ForgotpasswordView()) {
+                    NavigationLink(destination: ForgotPasswordView()) {
                         Text("Forgot Password?")
                             .foregroundColor(.gray)
                             .font(.urbanist600)
@@ -41,9 +42,7 @@ struct LoginView: View {
                     }
                 }
                 
-                CustomActionButton(title: "Login", action: {
-                    print("azf")
-                })
+                CustomActionButton(title: "Login", action: login)
                     .padding(.bottom, 35)
                 
                 
@@ -66,6 +65,19 @@ struct LoginView: View {
         .padding(.top, 12)
         .padding(.bottom, 26)
         .navigationBarHidden(true)
+        
+    }
+    
+    private func login() {
+        Task {
+            do {
+                try await Auth.auth().signIn(withEmail: email, password: password)
+                print("done")
+            } catch {
+                print(error.localizedDescription)
+            }
+            
+        }
         
     }
 }

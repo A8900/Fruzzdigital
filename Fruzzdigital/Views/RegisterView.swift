@@ -27,10 +27,10 @@ struct RegisterView: View {
                     .padding(.bottom, 32)
                 
                 VStack (spacing: 12) {
-                    CustomTextField(title: "Username")
-                    CustomTextField(title: "Email")
-                    CustomTextField(title: "Password")
-                    CustomTextField(title: "Confirm Password")
+                    CustomTextField(title: "Username", text: $username)
+                    CustomTextField(title: "Email", text: $email)
+                    CustomTextField(title: "Password", text: $password)
+                    CustomTextField(title: "Confirm Password", text: $confirmpassword)
                 }
                 .padding(.bottom, 30)
                 

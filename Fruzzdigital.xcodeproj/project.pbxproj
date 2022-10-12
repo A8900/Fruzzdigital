@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED390F7B28ED8CBB00CE649F /* ForgotpasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED390F7A28ED8CBB00CE649F /* ForgotpasswordView.swift */; };
+		ED390F7B28ED8CBB00CE649F /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED390F7A28ED8CBB00CE649F /* ForgotPasswordView.swift */; };
 		ED390F7D28ED9A3400CE649F /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED390F7C28ED9A3400CE649F /* RegisterView.swift */; };
 		ED390F7F28EDBEAB00CE649F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED390F7E28EDBEAB00CE649F /* LoginView.swift */; };
 		ED390F8228EDD15B00CE649F /* OTPButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED390F8128EDD15B00CE649F /* OTPButtonView.swift */; };
@@ -15,6 +15,14 @@
 		ED390F8628EDD7E700CE649F /* SocialsAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED390F8528EDD7E700CE649F /* SocialsAuthView.swift */; };
 		ED390F8828EDD84D00CE649F /* SocialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED390F8728EDD84D00CE649F /* SocialButton.swift */; };
 		ED390F8A28EDE56800CE649F /* CustomActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED390F8928EDE56800CE649F /* CustomActionButton.swift */; };
+		ED77F1B428F735B1009A86D1 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = ED77F1B328F735B1009A86D1 /* FirebaseAnalytics */; };
+		ED77F1B628F735B1009A86D1 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ED77F1B528F735B1009A86D1 /* FirebaseAnalyticsSwift */; };
+		ED77F1B828F735B1009A86D1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = ED77F1B728F735B1009A86D1 /* FirebaseAuth */; };
+		ED77F1BA28F735B1009A86D1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = ED77F1B928F735B1009A86D1 /* FirebaseFirestore */; };
+		ED77F1BC28F735B1009A86D1 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ED77F1BB28F735B1009A86D1 /* FirebaseFirestoreSwift */; };
+		ED77F1BE28F735B1009A86D1 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = ED77F1BD28F735B1009A86D1 /* FirebaseMessaging */; };
+		ED77F1C028F735B1009A86D1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = ED77F1BF28F735B1009A86D1 /* FirebaseStorage */; };
+		ED77F1C228F738B1009A86D1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED77F1C128F738B1009A86D1 /* GoogleService-Info.plist */; };
 		ED9D92A628EC4C9000A9C61A /* FruzzdigitalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D92A528EC4C9000A9C61A /* FruzzdigitalApp.swift */; };
 		ED9D92A828EC4C9000A9C61A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D92A728EC4C9000A9C61A /* WelcomeView.swift */; };
 		ED9D92AA28EC4C9200A9C61A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED9D92A928EC4C9200A9C61A /* Assets.xcassets */; };
@@ -25,13 +33,13 @@
 		ED9D92D728EC54A500A9C61A /* Urbanist-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED9D92D628EC54A500A9C61A /* Urbanist-Regular.ttf */; };
 		ED9D92DB28EC56CB00A9C61A /* PasswordChangedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D92DA28EC56CB00A9C61A /* PasswordChangedView.swift */; };
 		ED9D92DD28EC634300A9C61A /* OTPVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D92DC28EC634300A9C61A /* OTPVerificationView.swift */; };
-		ED9D92DF28EC7CFF00A9C61A /* CreatenewpasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D92DE28EC7CFF00A9C61A /* CreatenewpasswordView.swift */; };
+		ED9D92DF28EC7CFF00A9C61A /* CreateNewPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D92DE28EC7CFF00A9C61A /* CreateNewPasswordView.swift */; };
 		EDDF58A828EDFA5B00E27F03 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDF58A728EDFA5B00E27F03 /* BackButton.swift */; };
 		EDDF58AA28EDFC8C00E27F03 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDF58A928EDFC8C00E27F03 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ED390F7A28ED8CBB00CE649F /* ForgotpasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotpasswordView.swift; sourceTree = "<group>"; };
+		ED390F7A28ED8CBB00CE649F /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		ED390F7C28ED9A3400CE649F /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		ED390F7E28EDBEAB00CE649F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		ED390F8128EDD15B00CE649F /* OTPButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPButtonView.swift; sourceTree = "<group>"; };
@@ -39,6 +47,7 @@
 		ED390F8528EDD7E700CE649F /* SocialsAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialsAuthView.swift; sourceTree = "<group>"; };
 		ED390F8728EDD84D00CE649F /* SocialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialButton.swift; sourceTree = "<group>"; };
 		ED390F8928EDE56800CE649F /* CustomActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActionButton.swift; sourceTree = "<group>"; };
+		ED77F1C128F738B1009A86D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ED9D92A228EC4C9000A9C61A /* Fruzzdigital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fruzzdigital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9D92A528EC4C9000A9C61A /* FruzzdigitalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruzzdigitalApp.swift; sourceTree = "<group>"; };
 		ED9D92A728EC4C9000A9C61A /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -51,7 +60,7 @@
 		ED9D92D828EC54F600A9C61A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		ED9D92DA28EC56CB00A9C61A /* PasswordChangedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordChangedView.swift; sourceTree = "<group>"; };
 		ED9D92DC28EC634300A9C61A /* OTPVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OTPVerificationView.swift; path = ../../../../Documents/OTPVerificationView.swift; sourceTree = "<group>"; };
-		ED9D92DE28EC7CFF00A9C61A /* CreatenewpasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatenewpasswordView.swift; sourceTree = "<group>"; };
+		ED9D92DE28EC7CFF00A9C61A /* CreateNewPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPasswordView.swift; sourceTree = "<group>"; };
 		EDDF58A728EDFA5B00E27F03 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		EDDF58A928EDFC8C00E27F03 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +70,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED77F1BE28F735B1009A86D1 /* FirebaseMessaging in Frameworks */,
+				ED77F1BC28F735B1009A86D1 /* FirebaseFirestoreSwift in Frameworks */,
+				ED77F1B628F735B1009A86D1 /* FirebaseAnalyticsSwift in Frameworks */,
+				ED77F1BA28F735B1009A86D1 /* FirebaseFirestore in Frameworks */,
+				ED77F1C028F735B1009A86D1 /* FirebaseStorage in Frameworks */,
+				ED77F1B828F735B1009A86D1 /* FirebaseAuth in Frameworks */,
+				ED77F1B428F735B1009A86D1 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,14 +116,15 @@
 		ED9D92A428EC4C9000A9C61A /* Fruzzdigital */ = {
 			isa = PBXGroup;
 			children = (
-				ED390F8028EDD14900CE649F /* Controls */,
-				ED9D92D828EC54F600A9C61A /* Info.plist */,
-				ED9D92D128EC536E00A9C61A /* Fonts */,
 				ED9D92A528EC4C9000A9C61A /* FruzzdigitalApp.swift */,
 				ED9D92D928EC56A400A9C61A /* Views */,
-				ED9D92A928EC4C9200A9C61A /* Assets.xcassets */,
+				ED390F8028EDD14900CE649F /* Controls */,
+				ED9D92D128EC536E00A9C61A /* Fonts */,
 				ED9D92AB28EC4C9200A9C61A /* Preview Content */,
 				ED9D92CF28EC51FE00A9C61A /* Styles.swift */,
+				ED9D92A928EC4C9200A9C61A /* Assets.xcassets */,
+				ED9D92D828EC54F600A9C61A /* Info.plist */,
+				ED77F1C128F738B1009A86D1 /* GoogleService-Info.plist */,
 			);
 			path = Fruzzdigital;
 			sourceTree = "<group>";
@@ -136,8 +153,8 @@
 				ED9D92A728EC4C9000A9C61A /* WelcomeView.swift */,
 				ED9D92DA28EC56CB00A9C61A /* PasswordChangedView.swift */,
 				ED9D92DC28EC634300A9C61A /* OTPVerificationView.swift */,
-				ED390F7A28ED8CBB00CE649F /* ForgotpasswordView.swift */,
-				ED9D92DE28EC7CFF00A9C61A /* CreatenewpasswordView.swift */,
+				ED390F7A28ED8CBB00CE649F /* ForgotPasswordView.swift */,
+				ED9D92DE28EC7CFF00A9C61A /* CreateNewPasswordView.swift */,
 				ED390F7E28EDBEAB00CE649F /* LoginView.swift */,
 				ED390F7C28ED9A3400CE649F /* RegisterView.swift */,
 			);
@@ -160,6 +177,15 @@
 			dependencies = (
 			);
 			name = Fruzzdigital;
+			packageProductDependencies = (
+				ED77F1B328F735B1009A86D1 /* FirebaseAnalytics */,
+				ED77F1B528F735B1009A86D1 /* FirebaseAnalyticsSwift */,
+				ED77F1B728F735B1009A86D1 /* FirebaseAuth */,
+				ED77F1B928F735B1009A86D1 /* FirebaseFirestore */,
+				ED77F1BB28F735B1009A86D1 /* FirebaseFirestoreSwift */,
+				ED77F1BD28F735B1009A86D1 /* FirebaseMessaging */,
+				ED77F1BF28F735B1009A86D1 /* FirebaseStorage */,
+			);
 			productName = Fruzzdigital;
 			productReference = ED9D92A228EC4C9000A9C61A /* Fruzzdigital.app */;
 			productType = "com.apple.product-type.application";
@@ -188,6 +214,9 @@
 				Base,
 			);
 			mainGroup = ED9D929928EC4C9000A9C61A;
+			packageReferences = (
+				ED77F1B228F735B1009A86D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = ED9D92A328EC4C9000A9C61A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -204,6 +233,7 @@
 			files = (
 				ED9D92D328EC548700A9C61A /* Urbanist-Bold.ttf in Resources */,
 				ED9D92D528EC549900A9C61A /* Urbanist-Medium.ttf in Resources */,
+				ED77F1C228F738B1009A86D1 /* GoogleService-Info.plist in Resources */,
 				ED9D92AD28EC4C9200A9C61A /* Preview Assets.xcassets in Resources */,
 				ED9D92AA28EC4C9200A9C61A /* Assets.xcassets in Resources */,
 				ED9D92D728EC54A500A9C61A /* Urbanist-Regular.ttf in Resources */,
@@ -220,13 +250,13 @@
 				ED9D92DB28EC56CB00A9C61A /* PasswordChangedView.swift in Sources */,
 				ED390F8428EDD2D900CE649F /* CustomTextField.swift in Sources */,
 				ED390F8828EDD84D00CE649F /* SocialButton.swift in Sources */,
-				ED390F7B28ED8CBB00CE649F /* ForgotpasswordView.swift in Sources */,
+				ED390F7B28ED8CBB00CE649F /* ForgotPasswordView.swift in Sources */,
 				EDDF58AA28EDFC8C00E27F03 /* CustomButton.swift in Sources */,
 				ED390F8A28EDE56800CE649F /* CustomActionButton.swift in Sources */,
 				ED9D92DD28EC634300A9C61A /* OTPVerificationView.swift in Sources */,
 				ED390F7F28EDBEAB00CE649F /* LoginView.swift in Sources */,
 				ED390F8228EDD15B00CE649F /* OTPButtonView.swift in Sources */,
-				ED9D92DF28EC7CFF00A9C61A /* CreatenewpasswordView.swift in Sources */,
+				ED9D92DF28EC7CFF00A9C61A /* CreateNewPasswordView.swift in Sources */,
 				ED390F8628EDD7E700CE649F /* SocialsAuthView.swift in Sources */,
 				ED9D92D028EC51FE00A9C61A /* Styles.swift in Sources */,
 				ED390F7D28ED9A3400CE649F /* RegisterView.swift in Sources */,
@@ -435,6 +465,55 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ED77F1B228F735B1009A86D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ED77F1B328F735B1009A86D1 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED77F1B228F735B1009A86D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		ED77F1B528F735B1009A86D1 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED77F1B228F735B1009A86D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		ED77F1B728F735B1009A86D1 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED77F1B228F735B1009A86D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		ED77F1B928F735B1009A86D1 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED77F1B228F735B1009A86D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		ED77F1BB28F735B1009A86D1 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED77F1B228F735B1009A86D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		ED77F1BD28F735B1009A86D1 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED77F1B228F735B1009A86D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		ED77F1BF28F735B1009A86D1 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED77F1B228F735B1009A86D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ED9D929A28EC4C9000A9C61A /* Project object */;
 }

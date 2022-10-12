@@ -1,5 +1,5 @@
 //
-//  ForgotpasswordView.swift
+//  ForgotPasswordView.swift
 //  Fruzzdigital
 //
 //  Created by grand ahmad on 09/03/1444 AH.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ForgotpasswordView: View {
+struct ForgotPasswordView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var email = ""
     var body: some View {
@@ -29,7 +29,7 @@ struct ForgotpasswordView: View {
                         .padding(.trailing, 28)
                         .padding(.bottom, 32)
                     
-                    CustomTextField(title: "Enter your email")
+                    CustomTextField(title: "Enter your email", text: $email)
                         .padding(.bottom, 38)
                     
                     CustomActionButton(title: "Send Code", action: {})
@@ -60,8 +60,8 @@ struct ForgotpasswordView: View {
     }
 }
 
-struct ForgotpasswordView_Previews: PreviewProvider {
+struct ForgotPasswordView_Previews: PreviewProvider {
     static var previews: some View {
-        ForgotpasswordView()
+        ForgotPasswordView()
     }
 }

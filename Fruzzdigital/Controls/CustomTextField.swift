@@ -10,13 +10,14 @@ import SwiftUI
 struct CustomTextField: View {
     
     let title: String
-    @State var text: String = ""
+    @Binding var text: String
     @State private var showPassword: Bool = false
     let imageName: String?
     let password: Bool
     
-    init(title: String, imageName: String? = nil, password: Bool = false) {
+    init(title: String, text: Binding<String>, imageName: String? = nil, password: Bool = false) {
         self.title = title
+        self._text = text
         self.password = password
         self.imageName = imageName
     }
@@ -60,8 +61,8 @@ struct CustomTextField: View {
 struct CustomTextField_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            CustomTextField(title: "Enter your email")
-            CustomTextField(title: "Enter your password", imageName: "person", password: true)
+            CustomTextField(title: "Enter your email", text: .constant(""))
+            CustomTextField(title: "Enter your password", text: .constant(""), imageName: "person", password: true)
         }
         .padding(22)
         

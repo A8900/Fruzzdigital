@@ -1,5 +1,5 @@
 //
-//  CreatenewpasswordView.swift
+//  CreateNewPasswordView.swift
 //  Fruzzdigital
 //
 //  Created by grand ahmad on 08/03/1444 AH.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CreatenewpasswordView: View {
+struct CreateNewPasswordView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var newPassword = ""
     @State private var confirmPassword = ""
@@ -30,8 +30,8 @@ struct CreatenewpasswordView: View {
                 
                 VStack(alignment: .leading, spacing: 15){
             
-                    CustomTextField(title: "New Password")
-                    CustomTextField(title: "Confirm Password")
+                    CustomTextField(title: "New Password", text: $newPassword)
+                    CustomTextField(title: "Confirm Password", text: $confirmPassword)
         
                 }
                 .padding(.bottom, 38)
@@ -49,8 +49,8 @@ struct CreatenewpasswordView: View {
     }
 }
 
-struct CreatenewpasswordView_Previews: PreviewProvider {
+struct CreateNewPasswordView_Previews: PreviewProvider {
     static var previews: some View {
-        CreatenewpasswordView()
+        CreateNewPasswordView()
     }
 }
